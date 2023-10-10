@@ -1,7 +1,24 @@
 ---
-title: "omisol"
-output: pdf_document
+title: "Untitled"
+output: html_document
 date: "2023-10-10"
+---
+
+---
+title: "omisol"
+output:
+  pdf_document: default
+  html_document: default
+date: "2023-10-10"
+---
+
+---
+title: "carljasonomisol.Rworksheet3"
+author: "Carl jason Omisol"
+date: "2023-10-10"
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 #Number 1:

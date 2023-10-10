@@ -96,8 +96,26 @@ save(subset_data, file = "Ranks.RData")
 print(subset_data)
 
 #Number 9
+#A
+library(readxl)
+ExcelDta <- read_excel("worksheet2/hotels-vienna.xlsx")
+ExcelDta
 
-#A.
+#B
+dimensions <- dim(ExcelDta)
+dimensions
+
+#C
+selected_columns <- ExcelDta[, c("country", "neighbourhood", "price", "stars", "accommodation_type", "rating")]
+head(selected_columns, n = nrow(selected_columns))
+
+#D
+save(selected_columns, file = "new.RData")
+
+#E
+load("new.RData")
+head(selected_columns)
+tail(selected_columns)
 
 #10.
 #A.
