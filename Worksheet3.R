@@ -16,7 +16,9 @@ vec
 version <-c ("z","y","x","v","u")
 version
 
-
+#E
+letters15to24 <- letters[15:24]
+letters15to24
 
 #2
 city<-c("Tuguegarao City","Manila","Iloilo City,tacloban","Samal island","Davao City")
