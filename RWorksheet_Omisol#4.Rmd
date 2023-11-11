@@ -1,0 +1,43 @@
+---
+title: "Untitled"
+output: pdf_document
+date: "2023-11-11"
+---
+
+``` {r number1}
+#num1
+vectorA <- c(1, 2, 3, 4, 5)
+matrixA <- matrix(0, nrow=5, ncol=5)
+
+# Fill the matrix
+for(i in 1:5) {
+  for(j in 1:5) {
+    if(j <= (6 - i)) {
+      matrixA[i,j] <- j - 1
+    }
+  }
+}
+
+# Display the matrix
+print(matrixA)
+```
+```{r number2}
+#num2
+matrixA <- matrix(0,nrow=5, ncol=5)
+
+# Fill the matrix with asterisks
+for(i in 1:5) {
+  for(j in 1:5) {
+    if(j <= i) {
+      matrixA[i, j] <- "*"
+    }
+  }
+}
+
+for (i in 1:5) {
+  for (j in 1:i) {
+    cat("*")
+  }
+  cat("\n")
+}
+```
